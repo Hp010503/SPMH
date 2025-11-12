@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ sản phẩm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 class="main-title">Hồ sơ sản prụim</h1>
+                <h2 class="sub-title">Product-list</h2>
+            </div>
+            <button id="open-search-btn" class="search-btn">Tìm kiếm & Lọc</button>
+        </header>
+        
+        <main id="product-list" class="product-list">
+            <!-- Các thẻ sản phẩm sẽ được chèn vào đây bởi JavaScript -->
+        </main>
+
+        <div id="pagination-controls" class="pagination-container"></div>
+    </div>
+
+    <!-- MODAL TÌM KIẾM -->
+    <div id="search-modal" class="modal-overlay">
+        <div class="search-modal-content">
+            <h2>Tìm kiếm & Lọc sản phẩm</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="search-address">Địa chỉ</label>
+                    <input type="text" id="search-address" placeholder="Nhập tên thôn, xã...">
+                </div>
+                <div class="form-group">
+                    <label for="search-area">Diện tích tối thiểu (m²)</label>
+                    <input type="number" id="search-area" placeholder="Nhập diện tích tối thiểu...">
+                </div>
+                <div class="form-group">
+                    <label for="search-price">Giá (triệu/m²)</label>
+                    <div class="price-slider-container">
+                        <input type="range" id="search-price" min="0" max="200" value="200" step="1">
+                        <span id="price-value">Lên đến 200 triệu/m²</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="search-hashtags">Nhu cầu</label>
+                    <select id="search-hashtags" multiple>
+                        <!-- Options sẽ được chèn bởi JavaScript -->
+                    </select>
+                </div>
+            </form>
+            <div class="search-actions">
+                <button id="clear-filters-btn" class="action-btn clear-btn">Xóa Bộ Lọc</button>
+                <button id="cancel-search-btn" class="action-btn cancel-btn">Hủy</button>
+                <button id="apply-filters-btn" class="action-btn apply-btn">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL CHI TIẾT SẢN PHẨM -->
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            <div class="modal-image-gallery">
+                <img id="modal-image" src="" alt="Hình ảnh sản phẩm">
+                <button id="prev-image" class="gallery-nav prev">&lt;</button>
+                <button id="next-image" class="gallery-nav next">&gt;</button>
+                <div id="image-dots" class="image-dots-container"></div>
+            </div>
+            
+            <div class="modal-info">
+                <div class="modal-info-content">
+                    
+                    <div class="modal-details">
+                        <div class="detail-item">
+                            <span>Mã sản phẩm</span>
+                            <span id="modal-code" class="detail-value"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Phụ trách</span>
+                            <span id="modal-sale" class="detail-value"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Khu vực</span>
+                            <span id="modal-address" class="detail-value"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Diện tích</span>
+                            <span id="modal-area" class="detail-value"></span>
+                        </div>
+                         <div class="detail-item">
+                            <span>Đơn giá</span>
+                            <span id="modal-price" class="detail-value"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Phí dịch vụ</span>
+                            <span id="modal-fee" class="detail-value"></span>
+                        </div>
+                    </div>
+
+                    <a id="modal-map-link" href="#" target="_blank" class="map-link">Map link an toan</a>
+                    
+                    <h3>Sản phẩm phù hợp</h3>
+                    <div id="modal-hashtags" class="modal-hashtags"></div>
+
+                    <h3>Mô tả chi tiết</h3>
+                    <p id="modal-description" class="modal-description-text"></p>
+                </div>
+
+                <div class="contact-actions-container">
+                    <a id="contact-phone" href="#" class="contact-button phone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>Gọi điện</a>
+                    <a id="contact-zalo" href="#" target="_blank" class="contact-button zalo"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.22 16.452c-.396.204-.84.305-1.32.305-1.092 0-2.148-.564-2.82-1.488l-.012-.012-2.136-2.58c-.12-.144-.3-.24-.492-.24H10.2c-.3 0-.564.192-.66.48l-.48 1.488c-.06.18-.18.324-.348.42-.66.396-1.428.6-2.256.6-.108 0-.216-.012-.324-.024-.78-.108-1.464-.504-1.956-1.08-.12-.144-.132-.348-.024-.504l.12-.18c.084-.132.228-.204.384-.204h.108c.204 0 .396-.072.54-.204l.024-.024c.732-.696 1.152-1.68 1.152-2.724v-.024c0-.3.12-.588.336-.792.216-.204.504-.324.804-.324h.504c.3 0 .576-.192.672-.48l.456-1.464c.06-.192.18-.348.348-.432.66-.396 1.428-.612 2.256-.612.108 0 .216.012.324-.024.78.108 1.464.504 1.956 1.08.12.144.132.348.024-.504l-.12.18c-.084-.132-.228-.204-.384-.204h-.108c-.204 0-.396.072-.54-.204l-.024-.024c-.732.696-1.152 1.68-1.152 2.724v-.024c0 .3-.12.588-.336-.792-.216-.204-.504-.324-.804-.324h-.504c-.3 0-.576.192-.672-.48l-.48 1.488s.012.012.012.012l2.136 2.58c.672.924 1.728 1.488 2.82 1.488.48 0 .924-.108 1.32-.305.624-.324 1.128-.84 1.416-1.464.12-.264.396-.408.672-.348l.18.06c.264.084.432.348.348.624-.36 1.044-1.08 1.908-2.028 2.4z"></path></svg>Zalo</a>
+                    <a id="contact-facebook" href="#" target="_blank" class="contact-button facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.323-1.325z"></path></svg>Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <span id="close-lightbox" class="close-lightbox">&times;</span>
+        <img id="lightbox-image" src="" alt="Hình ảnh phóng to" class="lightbox-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+{
+  "ten_huyen": "Huyện Kiến Thụy (sau sáp nhập)",
+  "ghi_chu": "Dữ liệu các đơn vị hành chính sau khi sáp nhập có hiệu lực từ năm 2025. Cấu trúc JSON đã phân chia các thôn về đúng xã/thị trấn gốc trước khi sáp nhập.",
+  "danh_sach_xa_moi": [
+    {
+      "ten_xa_moi": "Xã Kiến Thụy",
+      "cac_don_vi_cu_sap_nhap": [
+        {
+          "ten_don_vi_cu": "Thị trấn Núi Đối",
+          "loai": "Thị trấn",
+          "thon_to_dan_pho": [
+            "Tiểu khu Cẩm Xuân",
+            "Tiểu khu Thọ Xuân",
+            "Tiểu khu Cầu Đen",
+            "Tiểu khu Hồ Sen"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Hữu Bằng",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Kim Đới",
+            "Thôn Túc Duyên",
+            "Thôn Xuân La"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Thuận Thiên",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Hòa Liễu",
+            "Thôn Xuân Úc",
+            "Thôn Úc Gián"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Thanh Sơn",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Xuân La",
+            "Thôn Cẩm La",
+            "Thôn Cẩm Hoàn"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Thụy Hương",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Quế Lâm",
+            "Thôn Phương Đôi",
+            "Thôn Trà Phương"
+          ]
+        }
+      ]
+    },
+    {
+      "ten_xa_moi": "Xã Kiến Minh",
+      "cac_don_vi_cu_sap_nhap": [
+        {
+          "ten_don_vi_cu": "Xã Minh Tân",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Sâm Linh",
+            "Thôn Cốc Liễn",
+            "Thôn Vũ Vị",
+            "Thôn Thấp Linh",
+            "Thôn Thọ Linh",
+            "Thôn Thù Du"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Đại Đồng",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Đức Phong",
+            "Thôn Phong Cầu 1",
+            "Thôn Phong Cầu 2"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Đông Phương",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Đại Trà Đức",
+            "Thôn Đại Trà Hồng",
+            "Thôn Đại Trà Sơn",
+            "Thôn Đại Trà Hải",
+            "Thôn Lạng Côn Hải",
+            "Thôn Lạng Côn Hà"
+          ]
+        }
+      ]
+    },
+    {
+      "ten_xa_moi": "Xã Kiến Hải",
+      "cac_don_vi_cu_sap_nhap": [
+        {
+          "ten_don_vi_cu": "Xã Tân Phong",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Lão Phong 1",
+            "Thôn Lão Phong 2",
+            "Thôn Lão Phú",
+            "Thôn Thái Lai",
+            "Thôn Kính Trực"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Tú Sơn",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Nãi Sơn",
+            "Thôn 2",
+            "Thôn 3",
+            "Thôn 4",
+            "Thôn 5",
+            "Thôn 6 (Hồi Xuân)",
+            "Thôn 7",
+            "Thôn 8"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Đại Hợp",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Đại Lộc",
+            "Thôn Quần Mục",
+            "Thôn Đông Tác",
+            "Thôn Việt Tiến"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Đoàn Xá",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Đoan Xá 1",
+            "Thôn Đoan Xá 2",
+            "Thôn Đoan Xá 3",
+            "Thôn Đoan Xá 4",
+            "Thôn Lộc Bồ",
+            "Thôn Lộc Kì",
+            "Thôn Tam Kiệt"
+          ]
+        }
+      ]
+    },
+    {
+      "ten_xa_moi": "Xã Kiến Hưng",
+      "cac_don_vi_cu_sap_nhap": [
+        {
+          "ten_don_vi_cu": "Xã Đại Hà",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Ngọc Liễn",
+            "Thôn Cao Bộ",
+            "Thôn Nhân Trai"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Ngũ Đoan",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Đương Thắng",
+            "Thôn Đại Thắng",
+            "Thôn Trúc",
+            "Thôn Tiền Anh",
+            "Thôn Hoà Nhất",
+            "Thôn Đồng Rồi"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Tân Trào",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Đa Ngư",
+            "Thôn Ngọc Tỉnh",
+            "Thôn An Trì",
+            "Thôn An Lạc"
+          ]
+        }
+      ]
+    },
+    {
+      "ten_xa_moi": "Xã Nghi Dương",
+      "cac_don_vi_cu_sap_nhap": [
+        {
+          "ten_don_vi_cu": "Xã Ngũ Phúc",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn Nghi Dương",
+            "Thôn Mai Dương",
+            "Thôn Xuân Chiếng",
+            "Thôn Xuân Đông",
+            "Thôn Xuân Đoài"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Kiến Quốc",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn 1",
+            "Thôn 2",
+            "Thôn 3",
+            "Thôn 4",
+            "Thôn 5",
+            "Thôn 6",
+            "Thôn 7",
+            "Thôn 8",
+            "Thôn 9"
+          ]
+        },
+        {
+          "ten_don_vi_cu": "Xã Du Lễ",
+          "loai": "Xã",
+          "thon_to_dan_pho": [
+            "Thôn 1",
+            "Thôn 2",
+            "Thôn 3",
+            "Thôn 4",
+            "Thôn 5"
+          ]
+        }
+      ]
+    }
+  ]
+}
